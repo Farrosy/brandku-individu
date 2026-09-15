@@ -6,7 +6,7 @@ export const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-md flex items-center justify-between px-6 md:px-16 py-6 shadow-sm">
-      <h1 className="text-3xl font-bold text-pink-500">Brandku</h1>
+      <h1 className="text-3xl font-bold text-pink-500">Brandaku</h1>
 
       <button 
         className="md:hidden text-2xl focus:outline-none" 
