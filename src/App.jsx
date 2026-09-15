@@ -4,15 +4,18 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";    
 import Pricing from "./pages/Pricing";
+import { useState } from "react";
+import { featuresData } from "../src/data/features";
 
 const App = () => {
+  const [features, setFeatures] = useState(featuresData);
   return (
     <>
       <BrowserRouter>
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home features={features}/>} />
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
         </Routes>

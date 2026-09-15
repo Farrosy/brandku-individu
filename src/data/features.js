@@ -1,4 +1,4 @@
-export const featureData = [
+export const featuresData = [
     {
         id: '1',
         icon: '⚡',
