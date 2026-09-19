@@ -21,11 +21,14 @@ function CardGrid({features}){
     })
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 border-2 border-slate-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
             {
                 dataProduct.map((data) => {
                     return (
-                        <Card key={data.id} icon={data.image} title={data.title} subtitle={data.subtitle}/>
+                        <>
+                            <Card key={data.id} icon={data.image} title={data.title} price={data.price} />
+                        </>
+                        
                     )
                 })
             }
